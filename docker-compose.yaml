@@ -1,11 +1,11 @@
 version: '3.8'
 services:
     docker-network-poll-test:
-        image: docker-network-poll-test:v4
+        image: docker-network-poll-test:v6
         build:
             context: .
             dockerfile: Dockerfile
         privileged: true
         container_name: docker-network-poll-test
         network_mode: host
-        cpuset: 2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+        cpuset: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
